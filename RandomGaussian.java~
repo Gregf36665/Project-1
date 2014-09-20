@@ -1,0 +1,8 @@
+/**
+ * This class is to create a random number
+ * within a gaussian distribution
+ */
+
+public class RandomGaussian{
+  
+}

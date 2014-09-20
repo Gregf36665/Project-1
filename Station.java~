@@ -1,0 +1,41 @@
+/**
+ * This class is the petrol station
+ * In here pumps and attendants are made
+ * as well as the queue for the pumps
+ * 
+ * @author Greg Flynn
+ */
+
+public class Station{
+  Line l;
+  
+  public static void main(String[] args){
+    Station s = new Station();
+    s.run();
+    
+  }
+  
+  
+  public void run(){
+    l = new Line();
+    Car c1 = new Car(0);
+    l.add(c1);
+    Car c2 = new Car(1);
+    l.add(c2);
+    c1 = new Car(0);
+    l.add(c1);
+    c2 = new Car(1);
+    l.add(c2);
+
+    
+  }
+ 
+  /**
+   * This method goes to the next minute in the simulation
+   */
+  public void nextFrame(){
+    l.incWaitTime();
+    
+  }
+  
+}

@@ -1,0 +1,8 @@
+/**
+ * This class is the Attendant for the pumps
+ * @author Greg Flynn
+ */
+
+public class Attendant{
+}
+
