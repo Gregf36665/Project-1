@@ -1,0 +1,4 @@
+graphs to make
+
+pumps vs profit (for each attendant count x5 lines)
+attendants vs profit (for each pump x5 lines)
