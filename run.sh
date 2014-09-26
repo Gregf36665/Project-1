@@ -1,12 +1,9 @@
 #!/bin/bash
-if [ -f output.csv ]; then
-	rm output*.csv
-fi
 for i in {1..5}
 	do
 	for j in {1..5}
 		do
-			echo $i pumps, $j attendent >> outputP${i}A${j}.csv
+			echo $i pumps, $j attendent > outputP${i}A${j}.csv
 			
 			for k in {1..5}
 			do

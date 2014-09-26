@@ -1,52 +1,21 @@
 4 pumps, 3 attendent
-GrossProfit,1236
+GrossProfit,1190
 Cost,102
-Total profit,1134
+Total profit,1088
+Late cars,0
+Total cars,95
+Late cars,0.0
+GrossProfit,1248
+Cost,102
+Total profit,1146
 Late cars,0
 Total cars,97
 Late cars,0.0
-GrossProfit,1228
+GrossProfit,1249
 Cost,102
-Total profit,1126
+Total profit,1147
 Late cars,0
-Total cars,93
-Late cars,0.0
-GrossProfit,1191
-Cost,102
-Total profit,1089
-Late cars,0
-Total cars,94
-Late cars,0.0
-GrossProfit,1179
-Cost,102
-Total profit,1077
-Late cars,0
-Total cars,94
-Late cars,0.0
-GrossProfit,1191
-Cost,102
-Total profit,1089
-Late cars,0
-Total cars,94
-Late cars,0.0
-4 pumps, 3 attendent
-GrossProfit,1179
-Cost,102
-Total profit,1077
-Late cars,0
-Total cars,94
-Late cars,0.0
-GrossProfit,1148
-Cost,102
-Total profit,1046
-Late cars,0
-Total cars,89
-Late cars,0.0
-GrossProfit,1228
-Cost,102
-Total profit,1126
-Late cars,0
-Total cars,93
+Total cars,96
 Late cars,0.0
 GrossProfit,1215
 Cost,102
@@ -54,9 +23,9 @@ Total profit,1113
 Late cars,0
 Total cars,94
 Late cars,0.0
-GrossProfit,1303
+GrossProfit,1247
 Cost,102
-Total profit,1201
+Total profit,1145
 Late cars,0
-Total cars,102
+Total cars,98
 Late cars,0.0
