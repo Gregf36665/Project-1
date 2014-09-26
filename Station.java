@@ -16,9 +16,10 @@ public class Station{
   private double timeTillNextPetrol=0;
   private double timeTillNextDiesel=0;
   private int carCount = 1;
-  public static void main(String[] args){
-    
-  }
+  private int grossProfit = 0;
+  private int cost = 0;
+  private int late = 0;
+  
   
   /**
    * This method creates the pumps for the station
@@ -42,6 +43,7 @@ public class Station{
     attendants = new ArrayList<Attendant>(n);
     for (int i=0;i<n;i++){
       attendants.add(new Attendant());
+      cost+= 34; // 2h of work at $17/h == 34
     }
   }
   
@@ -61,6 +63,12 @@ public class Station{
      // debug();
       nextFrame();
     }
+    System.out.println("GrossProfit,"+grossProfit);
+    System.out.println("Cost,"+cost);
+    System.out.println("Total profit,"+(grossProfit-cost));
+    System.out.println("Late cars count," + late);
+    System.out.println("Total cars," + carCount);
+    System.out.println("Late car percent," + ((double)late*100.0/(double)carCount));
   }
   
   /**
@@ -77,7 +85,8 @@ public class Station{
         Car c = l.next();
         pumps.get(i).fill(c);
         pumps.get(i).askAttendant(attendants);
-        System.out.println(carCount+","+c.getWaitTime());
+        if (c.getWaitTime()>21) late++;
+        grossProfit += profitEarned(c);
         carCount ++;
         return;
       }
@@ -85,6 +94,23 @@ public class Station{
     }
     return;
   }
+  
+  /**
+   * This method returns the gross profit of the transaction on a car
+   * 
+   * @return the profit earned from this car
+   */
+  public int profitEarned(Car c){
+    int profit;
+    if (c.getFuel()==(new Car(0)).getFuel()){
+      profit = 11;
+    }
+    else{
+      profit = 23;
+    }
+   return profit; 
+  }
+  
   
   /**
    * This method decides if a new car should be added
