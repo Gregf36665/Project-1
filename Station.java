@@ -60,15 +60,9 @@ public class Station{
       while(freePump()&&l.hasNext()&&freeAttendant()){
         tryToFill();        
       }
-     // debug();
+      
       nextFrame();
     }
-    System.out.println("GrossProfit,"+grossProfit);
-    System.out.println("Cost,"+cost);
-    System.out.println("Total profit,"+(grossProfit-cost));
-    System.out.println("Late cars count," + late);
-    System.out.println("Total cars," + carCount);
-    System.out.println("Late car percent," + ((double)late*100.0/(double)carCount));
   }
   
   /**
@@ -85,7 +79,8 @@ public class Station{
         Car c = l.next();
         pumps.get(i).fill(c);
         pumps.get(i).askAttendant(attendants);
-        if (c.getWaitTime()>21) late++;
+        if (c.getWaitTime()>19) late++;
+        System.out.println(carCount+","+c.getWaitTime()+"");
         grossProfit += profitEarned(c);
         carCount ++;
         return;
@@ -174,4 +169,5 @@ public class Station{
     }
   return false;
   }
+  
 }

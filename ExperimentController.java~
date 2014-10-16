@@ -21,7 +21,6 @@ public class ExperimentController{
    */
   public void run(int pumpCount, int attendantCount, int duration){
     Station s = new Station();
-    System.out.println("Pumps:"+pumpCount+",Attendants:"+attendantCount);
     s.run(pumpCount,attendantCount,duration);
   }
   

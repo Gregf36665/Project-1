@@ -63,6 +63,6 @@ public class Car{
    * @return are they equal?
    */
   public boolean equals(Car c){
-    return (this.fuelType == c.fuelType);
+    return (this.fuelType == c.getFuel());
   }
 }
